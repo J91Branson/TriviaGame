@@ -1,0 +1,24 @@
+#quiz { display: none;
+}
+#scoreBox {display: none;
+}
+html, body {
+    height: 100%;
+    background-color: #1f0005;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+#main-page{
+       height: 100%;
+}
+p{
+    color:white;
+}
+form{
+    color: white;
+}
+.jumbotron{
+    background-color: black;
+}
+.btn-lg{
+    background-color: black;
+}
