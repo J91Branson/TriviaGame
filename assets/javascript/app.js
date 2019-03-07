@@ -6,7 +6,7 @@ var notAnswered = 0;
 var correctText = document.getElementById("correct-text")
 var incorrectText = document.getElementById("incorrect-text")
 var notAnsweredText = document.getElementById("notAnswered-text")
-var timeLeft = 30;
+var timeLeft = 70;
 var timeLeftText = document.getElementById("timeLeft-text")
 var elem = document.getElementById('some_div');  
 var timerId = setInterval(countdown, 1000);
@@ -30,7 +30,7 @@ function start() {
     button.textContent = "";
     document.getElementById("quiz").style.display = "block";
     document.getElementById("some_div").style.display = "inline-block";
-    timeLeft = 30;
+    timeLeft = 70;
     countdown();
     timeLeftText.textContent = "Time Remaining " + timeLeft;   
    
@@ -66,10 +66,10 @@ function score() {
     }
     else{ notAnswered++;}
     
-    if (question3 === "d") {
+    if (question3 === "a") {
         correct++;
     }
-    else if(question3 === "a"||"b"||"c") {
+    else if(question3 === "b"||"c"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
@@ -90,42 +90,42 @@ function score() {
     }
     else{ notAnswered++;}
 
-    if (question6 === "d") {
+    if (question6 === "c") {
         correct++;
     }
-    else if(question6 === "a"||"b"||"c") {
+    else if(question6 === "a"||"b"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
 
-    if (question7 === "d") {
+    if (question7 === "a") {
         correct++;
     }
-    else if(question7 === "a"||"b"||"c") {
+    else if(question7 === "b"||"c"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
 
-    if (question8 === "d") {
+    if (question8 === "b") {
         correct++;
     }
-    else if(question8 === "a"||"b"||"c") {
+    else if(question8 === "a"||"c"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
 
-    if (question9 === "d") {
+    if (question9 === "c") {
         correct++;
     }
-    else if(question9 === "a"||"b"||"c") {
+    else if(question9 === "a"||"b"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
 
-    if (question10 === "d") {
+    if (question10 === "c") {
         correct++;
     }
-    else if(question10 === "a"||"b"||"c") {
+    else if(question10 === "a"||"b"||"d") {
         incorrect++;        
     }
     else{ notAnswered++;}
