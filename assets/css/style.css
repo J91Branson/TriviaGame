@@ -15,6 +15,13 @@ html, body {
 p{
     color:white;
 }
+.fa-stopwatch{
+    color: white;
+}
+#time-container{
+    text-align: center;
+    
+}
 form{
     color: white;
 }

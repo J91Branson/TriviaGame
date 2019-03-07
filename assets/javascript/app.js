@@ -29,7 +29,7 @@ function countdown() {
 function start() {
     button.textContent = "";
     document.getElementById("quiz").style.display = "block";
-    document.getElementById("some_div").style.display = "block";
+    document.getElementById("some_div").style.display = "inline-block";
     timeLeft = 30;
     countdown();
     timeLeftText.textContent = "Time Remaining " + timeLeft;   
