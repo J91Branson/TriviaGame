@@ -6,11 +6,34 @@ var notAnswered = 0;
 var correctText = document.getElementById("correct-text")
 var incorrectText = document.getElementById("incorrect-text")
 var notAnsweredText = document.getElementById("notAnswered-text")
+var timeLeft = 30;
+var timeLeftText = document.getElementById("timeLeft-text")
+var elem = document.getElementById('some_div');  
+var timerId = setInterval(countdown, 1000);
+
+
+
+function countdown() {
+    if (timeLeft == 0) {
+      clearTimeout(timerId);
+      alert = "Time";
+      score();
+    } else {
+      timeLeftText.textContent = "Time Remaining " + timeLeft;
+      timeLeft--;
+    }
+  }
+
+
 
 function start() {
     button.textContent = "";
     document.getElementById("quiz").style.display = "block";
-     
+    document.getElementById("some_div").style.display = "block";
+    timeLeft = 30;
+    countdown();
+    timeLeftText.textContent = "Time Remaining " + timeLeft;   
+   
 }    
 
 function score() {
@@ -34,7 +57,7 @@ function score() {
     else if((question1 === "a") ||(question1 === "b") ||(question1 === "c")) {
         incorrect++;        
     }
-    else{ notAnswered++;}
+    else { notAnswered++;}
     if (question2 === "d") {
         correct++;
     }

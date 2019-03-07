@@ -2,6 +2,8 @@
 }
 #scoreBox {display: none;
 }
+#some_div {display: none;
+}
 html, body {
     height: 100%;
     background-color: #1f0005;
