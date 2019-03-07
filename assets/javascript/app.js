@@ -6,18 +6,28 @@ var notAnswered = 0;
 var correctText = document.getElementById("correct-text")
 var incorrectText = document.getElementById("incorrect-text")
 var notAnsweredText = document.getElementById("notAnswered-text")
-var question1 = document.quiz.question1.value;
-var question2 = document.quiz.question2.value;
-var question3 = document.quiz.question3.value;
-var question4 = document.quiz.question4.value;
-var question5 = document.quiz.question5.value;
-var question6 = document.quiz.question6.value;
-var question7 = document.quiz.question7.value;
-var question8 = document.quiz.question8.value;
-var question9 = document.quiz.question9.value;
-var question10 = document.quiz.question10.value;
 
-function checkScore(){
+function start() {
+    button.textContent = "";
+    document.getElementById("quiz").style.display = "block";
+     
+}    
+
+function score() {
+    var question1 = document.querySelector('input[name="question1"]:checked').value;
+    
+    var question2 = document.querySelector('input[name="question2"]:checked').value;
+    var question3 = document.querySelector('input[name="question3"]:checked').value;
+
+    var question4 = document.querySelector('input[name="question4"]:checked').value;
+    var question5 = document.querySelector('input[name="question5"]:checked').value;
+    var question6 = document.querySelector('input[name="question6"]:checked').value;
+    var question7 = document.querySelector('input[name="question7"]:checked').value;
+    var question8 = document.querySelector('input[name="question8"]:checked').value;
+    var question9 = document.querySelector('input[name="question9"]:checked').value;
+    var question10 = document.querySelector('input[name="question10"]:checked').value;
+
+    console.log(question1)
     if (question1 === "d") {
         correct++;
     }
@@ -25,7 +35,6 @@ function checkScore(){
         incorrect++;        
     }
     else{ notAnswered++;}
-
     if (question2 === "d") {
         correct++;
     }
@@ -97,17 +106,9 @@ function checkScore(){
         incorrect++;        
     }
     else{ notAnswered++;}
-}
-function start() {
-    button.textContent = "";
-    document.getElementById("quiz").style.display = "block";
-     
-}    
-
-function score() {
     button.textContent = "";
     quizText.textContent = "";
-    checkScore();
+    // checkScore();
     document.getElementById("scoreBox").style.display = "block";    
     correctText.textContent = "Correct "+ correct;
     incorrectText.textContent = "Incorrect " + incorrect;
