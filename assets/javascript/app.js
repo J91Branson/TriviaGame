@@ -131,8 +131,9 @@ function score() {
     else{ notAnswered++;}
     button.textContent = "";
     quizText.textContent = "";
-    // checkScore();
-    document.getElementById("scoreBox").style.display = "block";    
+    
+    document.getElementById("scoreBox").style.display = "block";
+    document.getElementById("some_div").style.display = "none";    
     correctText.textContent = "Correct "+ correct;
     incorrectText.textContent = "Incorrect " + incorrect;
     notAnsweredText.textContent ="Not Answered " + notAnswered;
