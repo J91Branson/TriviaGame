@@ -224,19 +224,19 @@ else if (question10 === "a" || "b" || "c") {
 
 }
 
-// function reset() {
-//     // this toggles what is visible on their screen.
-//     document.getElementById("quiz").style.display = "none";
-//     document.getElementById("some_div").style.display = "none";
-//     document.getElementById("ta-button").style.display = "none";
-//     document.getElementById("scoreBox").style.display = "none";
-//     document.getElementById("main-button").style.display = "block";
-//     // this resets the score
-//     correct = 0;
-//     incorrect = 0;
-//     notAnswered = 0;
-//     // allows the start button to be clicked up to 20 mins after the ta button, so that the score function does start before the game.
-//     timeLeft = 12000;
+function reset() {
+    // this toggles what is visible on their screen.
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("some_div").style.display = "none";
+    document.getElementById("ta-button").style.display = "none";
+    document.getElementById("scoreBox").style.display = "none";
+    document.getElementById("main-button").style.display = "block";
+    // this resets the score
+    correct = 0;
+    incorrect = 0;
+    notAnswered = 0;
+    // allows the start button to be clicked up to 20 mins after the ta button, so that the score function does start before the game.
+    timeLeft = 12000;
     
 
-// }
+}
