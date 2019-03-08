@@ -1,8 +1,17 @@
-#quiz { display: none;
+#quiz {
+    display: none;
 }
-#scoreBox {display: none;
+#scoreBox {
+    display: none;
 }
-#some_div {display: none;
+#some_div {
+    display: none;
+}
+#main-button{
+    display: block;
+}
+#ta-button{ 
+    display: none;
 }
 html, body {
     height: 100%;
@@ -20,7 +29,10 @@ p{
 }
 #time-container{
     text-align: center;
-    
+   
+}
+#button-container{
+    text-align: center;
 }
 form{
     color: white;
