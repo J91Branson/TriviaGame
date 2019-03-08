@@ -13,11 +13,20 @@ var elem = document.getElementById('some_div');
 var timerId = setInterval(countdown, 1000);
 
 
+
+
+
+
+
+
+
+
+
+
 // timer function
 function countdown() {
     if (timeLeft == 0) {
-        clearTimeout(timerId);
-        alert = "Time";
+        clearTimeout(timerId);       
         score();
     } else {
         timeLeftText.textContent = "Time Remaining " + timeLeft;
@@ -38,6 +47,9 @@ function start() {
 }
 
 function score() {
+    correct = 0;
+    incorrect = 0;
+    notAnswered = 0;
     var question1
     var question2 
     var question3 
@@ -224,7 +236,7 @@ function reset() {
     incorrect = 0;
     notAnswered = 0;
     // allows the start button to be clicked up to 20 mins after the ta button, so that the score function does start before the game.
-    timeLeft = 1;
+    timeLeft = 12000;
     
 
 }
